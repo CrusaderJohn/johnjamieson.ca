@@ -1,0 +1,109 @@
+/*
+2022/05/13
+John Jamieson
+*/
+
+/* :root means <html> */
+/* # means it is an element */
+/* . means it is a class */
+
+:root
+{
+    --purple: #663399;
+    --black: #000000;
+}
+
+body
+{
+    background: var(--purple);
+    max-width: max-content;
+    margin: auto;
+}
+
+.grid
+{
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        'header header'
+        'menu main';
+    gap: 10px;
+    max-width: 1100px;
+    padding: 10px;
+}
+
+.grid > div
+{
+    text-align: center;
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 620px)
+{
+    .grid
+    {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            'header'
+            'menu'
+            'main';
+    }
+}
+
+.header
+{
+    grid-area: header;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 20px;
+}
+
+.menu
+{
+    grid-area: menu;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.main
+{
+    grid-area: main;
+    background-color: rgba(255, 255, 255, .75);
+    padding: 20px;
+}
+
+.menuUL
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.menuLI a
+{
+    display: block;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.menuLI a.active
+{
+    background-color: mediumpurple;
+    color: black;
+}
+
+.menuLI a:hover
+{
+    background-color: rebeccapurple;
+    color: black;
+}
+
+#resume
+{
+    text-align: left;
+    padding: 0 20px;
+    font-size: 150%;
+}
