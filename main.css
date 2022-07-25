@@ -15,6 +15,7 @@ John Jamieson
 
 body
 {
+    /* #097ffa linear-gradient(40deg,#c0242e 0,#097ffa 100%) fixed !important */
     background: var(--purple);
     max-width: max-content;
     margin: auto;

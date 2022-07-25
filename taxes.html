@@ -17,15 +17,18 @@ John Jamieson
     <div class="menu"> <!-- style="background-color:purple" -->
         <ul class="menuUL">
             <li class="menuLI" style="padding: 10px 20px;"></li>
-            <li class="menuLI"><a class="active" href="index.html">Main</a></li>
+            <li class="menuLI"><a href="index.html">Main</a></li>
             <li class="menuLI"><a href="resume.html">Resume</a></li>
-            <li class="menuLI"><a href="taxes.html">Taxes</a></li>
+            <li class="menuLI"><a class="active" href="taxes.html">Taxes</a></li>
             <li class="menuLI" style="padding: 10px 20px;"></li>
         </ul>
     </div>
-    <div class="main" style="display: flex; justify-content: center; align-items: center;">
-        <img src="PXL_20220515_191451853.MP.jpg" alt="John" style="width:100%;height:auto;">
+    <div class="main" id="tax">
+        <p>A Paragraph</p>
+        <button onclick="doTaxes()">Try it</button>
     </div>
 </div>
+<script src="taxes.js"></script>
+<noscript>You need to enable JavaScript to view the full site.</noscript>
 </body>
 </html>
